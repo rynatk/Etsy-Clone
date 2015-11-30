@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<link rel="stylesheet" type="text/css" href="screen.css">
+<title>Esty searcher</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<div class="leftHeader">
+				<div class="logo">
+					<img src="/images/etsy-logo.png">
+				</div>
+				<div class="search-wrapper">
+					<form class="search-form" action="" method="">
+						<input class="search-field" name="search" placeholder="enter Keywords" size="40" type="text">
+						<input type="submit" name="submit" value="Search">
+					</form>
+				</div>
+				<div class="browseBut"></div>
+			</div>
+			<div class="rightHeader">
+				<div class="rightArt">
+					<ul>
+						<li class="help">Help</li>
+						<li class="register">Register</li>
+						<li class="signIn">Sign In</li>
+						<li class="cart">Cart</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="leftSideBar">
+			<ul class="rdButtons">
+				<li>
+					<input type="radio">All Items</li>
+				<li>
+					<input type="radio">Hand Made</li>
+				<li>
+					<input type="radio">Vintage</li>
+				<li>
+					<input type="radio">Craft Supplies</li>
+			</ul>
+			<hr>
+			<p class="catText">Categories</p>
+			<h3><a href="#" class="handmade">HandMade</a></h3>
+			<ul class="categories">
+				<li><a href="#">Glass</a></li>
+				<li><a href="#">Weddings</a></li>
+				<li><a href="#">Housewares</a></li>
+				<li><a href="#">Accessories</a></li>
+				<li><a href="#">Art</a></li>
+				<li><a href="#">Jewlery</a></li>
+				<li><a href="#">Ceramics and Pottery</a></li>
+				<li><a href="#">Clothing</a></li>
+			</ul>
+			<h3><a href="#" class="vint">Vintage</a></h3>
+			<ul class="vintage">
+				<li><a href="#">Collectibles</a></li>
+				<li><a href="#">Serving</a></li>
+				<li><a href="#">Housewares2</a></li>
+				<li><a href="#">Antique</a></li>
+			</ul>
+			<h3><a href="#" class="craft">Craft Supplies</a></h3>
+			<ul class="craftSup">
+				<li><a href="#">Bead</a></li>
+				<li><a href="#">Commercial</a></li>
+				<li><a href="#">Scrap Booking</a></li>
+				<li><a href="#">Fabric</a></li>
+			</ul>
+			<hr>
+			<h3>Price Filter</h3>
+			<div class="pfButtons">
+				<button class="1but">$ Min</button>
+				<span> to </span>
+				<button class="2button">$ Max</button>
+			</div>
+			<hr>
+			<h3>Filter by Color</h3>
+			<div class="colorPicker">
+				<button class="tbRed">&nbsp</button>
+				<button class="tbOrange">&nbsp</button>
+				<button class="tbYellow">&nbsp</button>
+				<button class="tbGreen">&nbsp</button>
+				<button class="tbBlue">&nbsp</button>
+				<button class="tbPurple">&nbsp</button>
+				<button class="tbBlack">&nbsp</button>
+				<button class="tbWhite">&nbsp</button>
+			</div>
+			<hr>
+			<h3>Ordering Options</h3>
+			<input type="checkbox">All Items
+			<br>
+			<input type="checkbox">Customizable
+			<hr>
+			<h3>Shop Location</h3>
+			<input type="checkbox">Anywhere
+			<br>
+			<input type="checkbox">United States
+			<br>
+			<a href="#" class="custLoc">Choose a custom location</a>
+			<hr>
+			<div class=shipTo>Ships to <a href="#" class="shipClear">Clear</a></div>
+			<input type="text" value="United States" class="country">
+		</div>
+		<main id="product">
+			<h1>Test</h1>
+		</main>
+
+
+
+		<script id="listingTemplate" type="text/template">
+			<div class='product-image'>
+				<img src="{{ imageURL }}"/>
+			</div>
+			<div class='title'> {{ title }}</div>
+			<div class='price'> {{ price }} {{ currency_code }}</div>
+	</div>
+	</script>
+
+
+	<!-- </div> -->
+
+	<footer class="topFooter">
+		<h3 class="footerWord">Related to Product</h3>
+		<table class="prodLinks">
+			<tr>
+				<td>product Link 1</td>
+				<td>product Link 2</td>
+				<td>product Link 3</td>
+			</tr>
+			<tr>
+				<td>product Link 4</td>
+				<td>product Link 5</td>
+				<td>product Link 6</td>
+			</tr>
+			<tr>
+				<td>product Link 7</td>
+				<td>product Link 8</td>
+				<td>product Link 9</td>
+			</tr>
+		</table>
+		<br>
+		<div>
+			<p class="lookLine">Looking for shops?
+				<span style="color:lightblue"> product Link 1,&nbsp</span>
+				<span style="color:lightblue"> product Link 2,&nbsp</span>
+				<span style="color:lightblue"> product Link 3,&nbsp</span>
+				<span style="color:lightblue"> See More...</span>
+			</p>
+		</div>
+		<br />
+		<div>
+			<p class="pageTo">1
+				<span style="color:lightblue">&nbsp2&nbsp</span>
+				<span style="color:lightblue"> 3&nbsp</span>
+				<span style="color:lightblue"> 4&nbsp</span>
+				<span style="color:lightblue"> &nbsp...&nbsp</span>
+				<span style="color:lightblue"> 250 </span>
+			</p>
+		</div>
+	</footer>
+
+	<footer class="bottomFooter">
+		<div class="col1">
+			<ul>
+				<li>Turn Your Passion Into a Business</li>
+				<li class="openBut">
+					<button type="button">Open A Shop</button>
+				</li>
+				<li>Sell on Etsy</li>
+				<li>
+					<span style="color:lightblue">Seller Handbook</span>
+				</li>
+				<li>
+					<span style="color:lightblue">Etsy Credit Card Reader</span>
+				</li>
+			</ul>
+		</div>
+		<div class="col2">
+			<ul>
+				<li>Join the Community</li>
+				<li>
+					<span style="color:lightblue">Teams</span>
+				</li>
+				<li>
+					<span style="color:lightblue">Forums</span>
+				</li>
+				<li>
+					<span style="color:lightblue">Upcoming Events</span>
+				</li>
+				<li>
+					<span style="color:lightblue">Affiliates</span>
+				</li>
+			</ul>
+		</div>
+		<div class="col3">
+			<ul>
+				<li>Discover and Shop</li>
+				<li>
+					<span style="color:lightblue">Gift Cards</span>
+				</li>
+				<li>
+					<span style="color:lightblue">Blog</span>
+				</li>
+				<li>
+					<span style="color:lightblue">TasteMakers</span>
+				</li>
+				<li>
+					<span style="color:lightblue">Mobile Apps</span>
+				</li>
+				<li>
+					<span style="color:lightblue">Gift Registries</span>
+				</li>
+				<li>
+					<span style="color:lightblue">Wholesale</span>
+				</li>
+			</ul>
+		</div>
+		<div class="col4">
+			<ul>
+				<li>Get to Know Us</li>
+				<li>
+					<span style="color:lightblue">About</span>
+				</li>
+				<li>
+					<span style="color:lightblue">Careers</span>
+				</li>
+				<li>
+					<span style="color:lightblue">Press</span>
+				</li>
+				<li>
+					<span style="color:lightblue">Developers</span>
+				</li>
+			</ul>
+		</div>
+		<div class="col5">
+			<ul>
+				<li>Follow Etsy</li>
+				<li>
+					<span style="color:lightblue">Facebook</span>
+				</li>
+				<li>
+					<span style="color:lightblue">Twitter</span>
+				</li>
+				<li>
+					<span style="color:lightblue">Pinterest</span>
+				</li>
+				<li>
+					<span style="color:lightblue">Instagram</span>
+				</li>
+			</ul>
+		</div>
+
+
+	</footer>
+
+
+	</div>
+	<script src="bundle.js" charset="utf-8"></script>
+</body>
+
+</html>
